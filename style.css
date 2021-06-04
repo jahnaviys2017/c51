@@ -1,0 +1,53 @@
+img{border-radius: 50px}
+
+.header{
+ border:50px solid;
+ border-image: url(gljpg.jpg) 10% stretch; 
+ background-color:cyan;
+ display:flex;
+ justify-content: space-between;
+ animation: mycolor 10s infinite;
+}
+
+@keyframes mycolor{
+  0% {background-color: aqua;}
+  20% {background-color: aquamarine;}
+  30% {background-color:pink;}
+  60% {background-color: rgb(83, 43, 226);}
+  80% {background-color: salmon;}
+  100% {background-color: rgb(223, 130, 173);}
+}
+
+h1{animation:mymove 5s forwards;position: relative;}
+
+@keyframes mymove{
+  from{left:0%}
+  to{left:50%}
+}
+
+.menu{
+  animation:myopacity 5s infinite
+}
+
+@keyframes myopacity{
+  from{opacity: 0%;}
+  to{opacity: 100%;}
+}
+
+.games{
+  display:flex;
+  justify-content: space-around;
+  background-image: url(GlassArt.png );
+  opacity: 50%;
+}
+
+.grid{
+ text-align: center;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
